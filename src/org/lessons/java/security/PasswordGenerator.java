@@ -21,8 +21,26 @@ public class PasswordGenerator {
 		String userColor = noteDown.nextLine();
 		
 		//birthday day+month+year
+		int i = 0;
+		while (i != 1) {
 			System.out.println("Please type the day of your birth dd/mm/yyyy:");
 			String userBirth = noteDown.nextLine();
+			try {
+			   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		       LocalDate userBirthday = LocalDate.parse(userBirth, formatter);
+		       
+		       String[] parts = String.valueOf(userBirthday).split("-");
+		       String userDay = parts[0];
+		       String userMonth = parts[1]; 
+		       String userYear = parts[2];
+		       
+		    i = 1;
+					
+		    
+			} catch (Exception e) {  //generic exception management
+			    
+		      }	
+		}
 	}
 
 }
