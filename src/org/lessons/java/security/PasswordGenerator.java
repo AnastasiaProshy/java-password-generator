@@ -36,6 +36,8 @@ public class PasswordGenerator {
 		       
 		    i = 1;
 					
+		    //password
+			System.out.println("Your NotSure password: " + userName + "-" + userSurname + "-" + userColor + "-" + userDay + "-" + userMonth + "-" + userYear);
 		    
 			} catch (Exception e) {  //generic exception management
 			    
