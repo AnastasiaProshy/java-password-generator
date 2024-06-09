@@ -41,7 +41,7 @@ public class PasswordGenerator {
 			System.out.println("Your NotSure password: " + userName + "-" + userSurname + "-" + userColor + "-" + userDay + "-" + userMonth + "-" + userYear);
 		    
 			} catch (Exception e) {  //generic exception management
-			    
+			   
 				System.out.println("Something went wrong, please retype your date of birth,");
 		      }	
 		}
